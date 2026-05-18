@@ -32,19 +32,3 @@ Valores de `section_id` usados por la web:
 ## Desarrollo local
 - `npm install`
 - `npm run dev`
-
-## Build y preview local
-- `npm run build`
-- `npm run preview`
-
-## Railway
-El proyecto esta preparado para Railway con `railway.toml`:
-- Build: `npm run build`
-- Start: `npm run start`
-
-Variables requeridas en Railway:
-- `VITE_SUPABASE_URL`
-- `VITE_SUPABASE_ANON_KEY`
-- `VITE_STORAGE_BUCKET` (opcional)
-
-El servidor usa `PORT` de Railway automaticamente.
