@@ -1,0 +1,7 @@
+#002a44
+rgba(0, 69, 107, 0.8)
+#00456B
+#F18918
+#ECEFF0
+
+https://www.reddit.com/r/webdev/comments/15x3eph/38_websites_you_can_use_for_cool_backgrounds/?tl=es-es
