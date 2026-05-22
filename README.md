@@ -1,34 +1,72 @@
-# Web ERP
+# Web-ERP
 
-## Requisitos
-- Node `22.12.0` (ver `.nvmrc`)
+Plataforma ERP web modular desarrollada con Vue.js, Vite y Supabase.
 
-## Configuracion de entorno
-1. Crea un archivo `.env` desde `.env.example`.
-2. Define estas variables:
-   - `VITE_SUPABASE_URL`
-   - `VITE_SUPABASE_ANON_KEY`
-   - `VITE_STORAGE_BUCKET` (opcional, por defecto `Carousel`)
+## Descripción
 
-## Supabase
-1. En Supabase, abre SQL Editor y ejecuta completo `supabase-setup.sql`.
-2. Si quieres datos demo, sube imagenes al bucket `Carousel` usando las rutas de `supabase-examples.sql` o cambia esas rutas por las tuyas.
-3. Ejecuta `supabase-examples.sql` para insertar proyectos de ejemplo.
-4. Guarda en `projects.image_path` la ruta del archivo dentro del bucket, por ejemplo `clientes/demo-crm.webp`.
-5. Guarda en `projects.video_path` un enlace de YouTube o el ID del video.
+Web-ERP es una aplicación web que simula un sistema ERP empresarial, integrando diferentes áreas de gestión dentro de una única plataforma moderna y centralizada.
 
-Valores de `section_id` usados por la web:
-- `Clientes`
-- `Analisis Competencia`
-- `Campanyas de Marketing`
-- `Finanzas`
-- `Proveedores`
-- `RRHH`
-- `Inteligencia de Negocio`
-- `I+D`
-- `Documentacion`
-- `Produccion`
+El proyecto está orientado al desarrollo de una arquitectura modular y escalable, permitiendo gestionar distintas áreas de negocio desde una interfaz web intuitiva.
 
-## Desarrollo local
-- `npm install`
-- `npm run dev`
+---
+
+## Funcionalidades
+
+- Gestión de clientes (CRM)
+- Gestión de empleados (RRHH)
+- Módulos financieros básicos
+- Gestión de producción
+- Sistema de autenticación de usuarios
+
+---
+
+## Arquitectura
+
+El frontend está desarrollado con Vue.js y Vite, utilizando una estructura basada en componentes reutilizables y módulos independientes.
+
+Supabase se utiliza como backend para:
+- Base de datos
+- Autenticación
+- Gestión de usuarios
+
+---
+
+## Tecnologías utilizadas
+
+- Vue.js
+- Vite
+- Supabase
+- JavaScript
+- PostgreSQL
+
+---
+
+## Objetivo del proyecto
+
+Simular un entorno empresarial real donde diferentes áreas de negocio puedan gestionarse desde una única plataforma web moderna.
+
+El proyecto también sirve como práctica de:
+- Arquitectura frontend modular
+- Integración frontend/backend
+- Gestión de autenticación
+- Desarrollo de aplicaciones escalables
+
+---
+
+## Instalación
+
+Clonar el repositorio:
+
+   --   git clone https://github.com/mrgpx22/Web-ERP.git
+
+## Acceder al directorio:
+
+   --   cd Web-ERP
+
+## Instalar dependencias:
+
+   --   npm install
+   
+## Ejecutar el entorno de desarrollo:
+
+   --   npm run dev
