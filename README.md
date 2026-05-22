@@ -55,18 +55,46 @@ El proyecto también sirve como práctica de:
 
 ## Instalación
 
-Clonar el repositorio:
+### Clonar el repositorio
 
-   --   git clone https://github.com/mrgpx22/Web-ERP.git
+```bash
+git clone https://github.com/mrgpx22/Web-ERP.git
+```
 
-## Acceder al directorio:
+### Acceder al directorio
 
-   --   cd Web-ERP
+```bash
+cd Web-ERP
+```
 
-## Instalar dependencias:
+### Instalar dependencias
 
-   --   npm install
-   
-## Ejecutar el entorno de desarrollo:
+```bash
+npm install
+```
 
-   --   npm run dev
+### Ejecutar el entorno de desarrollo
+
+```bash
+npm run dev
+```
+
+---
+
+## Estado del proyecto
+
+🚧 En desarrollo
+
+---
+
+## Autor
+
+Joan Cabrerizo
+
+### GitHub
+https://github.com/mrgpx22
+
+---
+
+## Repositorio
+https://github.com/mrgpx22/Web-ERP
