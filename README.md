@@ -81,12 +81,6 @@ npm run dev
 
 ---
 
-## Estado del proyecto
-
-🚧 En desarrollo
-
----
-
 ## Autor
 
 Joan Cabrerizo Benedicto 
