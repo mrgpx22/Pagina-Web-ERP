@@ -89,7 +89,7 @@ npm run dev
 
 ## Autor
 
-Joan Cabrerizo
+Joan Cabrerizo Benedicto 
 
 ### GitHub
 https://github.com/mrgpx22
