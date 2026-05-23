@@ -4,10 +4,10 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "node scripts/write-runtime-config.mjs public && vite",
     "build": "vite build",
-    "preview": "vite preview",
-    "start": "node scripts/start-preview.mjs"
+    "preview": "node scripts/write-runtime-config.mjs dist && vite preview",
+    "start": "node scripts/write-runtime-config.mjs dist && node scripts/start-preview.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.99.0",

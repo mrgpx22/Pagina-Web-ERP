@@ -71,10 +71,13 @@ npm run start
 ## Estructura
 
 ```text
-src/          Paginas HTML de entrada para Vite
-public/       Assets publicos servidos desde la raiz
-scripts/      Scripts auxiliares de ejecucion
-dist/         Build generada localmente, no se sube a Git
+src/                 Codigo fuente de la aplicacion
+src/assets/js/       JavaScript con nombres legibles
+src/assets/css/      Estilos de la aplicacion
+src/assets/images/   Imagenes usadas por la interfaz
+public/              Configuracion runtime publica
+scripts/             Scripts auxiliares de ejecucion
+dist/                Build generada localmente, no se sube a Git
 ```
 
 ## Despliegue
