@@ -1,96 +1,116 @@
-# Web-ERP
+# Página Web ERP — Carrusel de Proyectos
 
-Plataforma ERP web modular desarrollada con Vue, Vite y Supabase.
+El proyecto consiste en un **carrusel interactivo** diseñado para presentar proyectos de una manera más visual, moderna y profesional.
 
-## Descripcion
+Repositorio:
+https://github.com/mrgpx22/Pagina-Web-ERP
 
-Web-ERP simula un sistema ERP empresarial con diferentes areas de gestion dentro de una interfaz web centralizada.
+---
 
-El proyecto esta pensado como practica de arquitectura frontend modular, integracion con backend, autenticacion y despliegue de aplicaciones web.
+## Objetivo
 
-## Funcionalidades
+Crear una interfaz dinámica que permita mostrar proyectos ERP, CRM, dashboards y sistemas web de forma atractiva, mejorando la experiencia visual del usuario y la presentación del portafolio.
 
-- Gestion de clientes y ventas (CRM)
-- Gestion de empleados (RRHH)
-- Modulos financieros basicos
-- Gestion de proveedores
-- Produccion y documentacion logistica
-- Inteligencia de negocio
-- Campanas de marketing y analisis de competencia
-- Integracion preparada para Supabase
+---
 
-## Tecnologias
+## Características
 
-- Vue 3
-- Vite
-- Supabase
+- Carrusel interactivo de proyectos
+- Diseño moderno y responsive
+- Navegación intuitiva
+- Animaciones suaves
+- Presentación visual de tecnologías y proyectos
+- Compatible con dispositivos móviles
+
+---
+
+## Ideas de Mejora
+
+### Tarjetas de Proyecto
+Cada card puede incluir:
+
+- Nombre del proyecto
+- Descripción corta
+- Tecnologías utilizadas
+- Imagen o preview
+- Botón de GitHub
+- Botón de demo
+
+---
+
+## Tecnologías Recomendadas
+
+- HTML5
+- CSS3
 - JavaScript
-- PostgreSQL
-- Railway
+- React (opcional)
+- TailwindCSS
+- Swiper.js o Slick Carousel
 
-## Requisitos
+---
 
-- Node.js 22.12.0, indicado en `.nvmrc`
-- npm
+## Características Premium
 
-## Instalacion
+- Modo oscuro
+- Filtros por categoría
+- Integración con GitHub API
+- Videos o GIFs de demostración
+- Estadísticas del proyecto
+- Transiciones avanzadas
 
-```bash
-git clone https://github.com/mrgpx22/Web-ERP.git
-cd Web-ERP
-npm install
-```
+---
 
-## Variables de entorno
+## Categorías de Proyectos
 
-Crea un archivo `.env` a partir de `.env.example`:
+- ERP
+- CRM
+- E-commerce
+- Dashboards
+- Automatización
+- Sistemas administrativos
 
-```bash
-cp .env.example .env
-```
+---
 
-Valores esperados:
+## Diseño e Inspiración
 
-```env
-VITE_SUPABASE_URL=https://your-project-ref.supabase.co
-VITE_SUPABASE_ANON_KEY=your-anon-key
-VITE_STORAGE_BUCKET=Carousel
-```
+El diseño puede inspirarse en plataformas modernas como:
 
-## Scripts
+- Stripe
+- Vercel
+- Notion
 
-```bash
-npm run dev
-npm run build
-npm run preview
-npm run start
-```
+Características visuales:
 
-`npm run start` sirve la build de produccion y usa la variable `PORT` cuando existe, por ejemplo en Railway.
+- Fondos oscuros elegantes
+- Cards minimalistas
+- Microanimaciones
+- Tipografía limpia
+- Efectos hover modernos
 
-## Estructura
+---
 
-```text
-src/                 Codigo fuente de la aplicacion
-src/assets/js/       JavaScript con nombres legibles
-src/assets/css/      Estilos de la aplicacion
-src/assets/images/   Imagenes usadas por la interfaz
-public/              Configuracion runtime publica
-scripts/             Scripts auxiliares de ejecucion
-dist/                Build generada localmente, no se sube a Git
-```
+## Deploy
 
-## Despliegue
+Opciones recomendadas para desplegar el proyecto:
 
-El proyecto incluye `railway.toml`:
+- Vercel
+- Netlify
+- GitHub Pages
 
-- Build: `npm run build`
-- Start: `npm run start`
+---
 
-## Autor
+## Beneficios
 
-Joan Cabrerizo Benedicto
+Este tipo de presentación es ideal para:
 
-GitHub: https://github.com/mrgpx22
+- Portafolios de desarrollador
+- Freelancers
+- Presentación de proyectos
+- Demos para clientes
+- Showcase de sistemas ERP
 
-Repositorio: https://github.com/mrgpx22/Web-ERP
+---
+
+## Estado del Proyecto
+
+En desarrollo 🚀
