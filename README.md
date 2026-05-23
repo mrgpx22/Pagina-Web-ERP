@@ -1,29 +1,41 @@
 # Web-ERP
 
-Plataforma web tipo ERP desarrollada con Vite, JavaScript y Supabase.
+Web-ERP es una plataforma web modular que simula un entorno ERP empresarial. El proyecto integra distintas áreas de gestión en una única interfaz: CRM, finanzas, recursos humanos, proveedores, marketing, producción e inteligencia de negocio.
 
-El proyecto centraliza diferentes areas de una empresa en una interfaz modular: CRM, finanzas, RRHH, proveedores, marketing, produccion e inteligencia de negocio.
+El objetivo principal del proyecto es demostrar una arquitectura frontend organizada, una integración funcional con Supabase y un flujo de despliegue preparado para entornos reales.
 
-## Funcionalidades
+## Descripción Del Proyecto
 
-- Panel principal con acceso a todos los modulos.
-- Carga de proyectos desde Supabase por seccion.
-- Carrusel interactivo de proyectos.
-- Soporte para imagenes y videos almacenados en Supabase Storage.
-- Reproduccion de videos locales o enlaces de YouTube.
-- Contador de proyectos por modulo.
-- Configuracion runtime para despliegue sin subir claves al repositorio.
+La aplicación actúa como un portal centralizado desde el que se accede a diferentes módulos empresariales. Cada módulo carga dinámicamente sus proyectos desde Supabase y los presenta mediante un carrusel interactivo con soporte para imágenes, vídeos y enlaces de YouTube.
 
-## Tecnologias
+Este proyecto está orientado a mostrar competencias en desarrollo web moderno, organización de código, consumo de servicios backend, gestión de variables de entorno y preparación de una aplicación para producción.
+
+## Funcionalidades Principales
+
+- Panel principal con acceso visual a todos los módulos del ERP.
+- Módulos independientes para CRM, finanzas, RRHH, proveedores, marketing, producción e inteligencia de negocio.
+- Carga dinámica de proyectos desde Supabase.
+- Carrusel interactivo por sección.
+- Visualización de imágenes desde Supabase Storage.
+- Soporte para vídeos almacenados y vídeos de YouTube.
+- Contador de proyectos por módulo.
+- Configuración runtime para evitar subir claves sensibles al repositorio.
+- Preparación para despliegue en Railway.
+
+## Tecnologías Utilizadas
 
 - Vite
 - JavaScript
+- HTML5
+- CSS3
 - Supabase
-- HTML
-- CSS
+- Supabase Storage
 - Railway
+- Node.js
 
-## Estructura del proyecto
+## Arquitectura
+
+El proyecto está organizado separando páginas, lógica JavaScript, estilos e imágenes. La aplicación utiliza Vite como herramienta de desarrollo y build, y Supabase como backend para la gestión de datos y recursos multimedia.
 
 ```text
 src/
@@ -57,9 +69,19 @@ scripts/
   write-runtime-config.mjs
 ```
 
-## Variables de entorno
+## Módulos Incluidos
 
-Crea un archivo `.env` en la raiz del proyecto usando `.env.example` como base:
+- **Clientes y Ventas (CRM)**: gestión visual de proyectos relacionados con clientes y actividad comercial.
+- **Finanzas**: sección orientada al área financiera.
+- **RRHH**: módulo para recursos humanos.
+- **Proveedores**: gestión de contenido relacionado con proveedores.
+- **Marketing**: campañas y análisis de competencia.
+- **Producción y Logística**: documentación y producción.
+- **Inteligencia de Negocio**: visualización de recursos de análisis y toma de decisiones.
+
+## Configuración Del Entorno
+
+Crea un archivo `.env` en la raíz del proyecto usando `.env.example` como referencia:
 
 ```env
 VITE_SUPABASE_URL=https://your-project-ref.supabase.co
@@ -67,54 +89,54 @@ VITE_SUPABASE_ANON_KEY=your-anon-key
 VITE_STORAGE_BUCKET=Carousel
 ```
 
-El archivo `.env` no debe subirse a GitHub. La app genera `app-config.json` en local o en produccion a partir de estas variables.
+El archivo `.env` no debe subirse al repositorio. La aplicación genera un archivo `app-config.json` en local o producción a partir de estas variables.
 
-## Instalacion
+## Instalación
 
 ```bash
 npm install
 ```
 
-## Desarrollo
+## Ejecución En Desarrollo
 
 ```bash
 npm run dev
 ```
 
-Este comando genera `public/app-config.json` desde `.env` y arranca Vite.
+Este comando genera la configuración runtime en `public/app-config.json` y arranca el servidor de desarrollo de Vite.
 
-## Build
+## Build De Producción
 
 ```bash
 npm run build
 ```
 
-La carpeta `dist/` se genera automaticamente y no se sube al repositorio.
+La carpeta `dist/` se genera automáticamente durante el proceso de build y está excluida del control de versiones.
 
-## Preview local
+## Preview Local
 
 ```bash
 npm run preview
 ```
 
-## Produccion
+## Arranque En Producción
 
 ```bash
 npm run start
 ```
 
-Este comando sirve la build de produccion y usa la variable `PORT` cuando existe, por ejemplo en Railway.
+Este comando sirve la build de producción y utiliza la variable `PORT` cuando está disponible, por ejemplo en Railway.
 
-## Despliegue en Railway
+## Despliegue
 
-El proyecto incluye `railway.toml` con:
+El proyecto incluye configuración para Railway mediante `railway.toml`:
 
 ```text
 Build command: npm run build
 Start command: npm run start
 ```
 
-Configura en Railway las mismas variables de entorno:
+Variables requeridas en Railway:
 
 ```env
 VITE_SUPABASE_URL=...
@@ -122,9 +144,9 @@ VITE_SUPABASE_ANON_KEY=...
 VITE_STORAGE_BUCKET=Carousel
 ```
 
-## Supabase
+## Modelo De Datos
 
-La aplicacion espera una tabla `projects` con campos usados por el carrusel:
+La aplicación espera una tabla `projects` en Supabase con los siguientes campos:
 
 ```text
 id
@@ -137,7 +159,7 @@ position
 completed
 ```
 
-`section_id` se compara con el modulo actual. Por ejemplo:
+El campo `section_id` se utiliza para filtrar los proyectos de cada módulo. Ejemplos de valores:
 
 ```text
 Clientes
@@ -152,9 +174,15 @@ Documentacion
 Produccion
 ```
 
-## Notas para GitHub
+## Seguridad Y Buenas Prácticas
 
-No se deben subir:
+- Las variables sensibles se mantienen fuera del repositorio.
+- `.env` y `public/app-config.json` están ignorados por Git.
+- `dist/` no se versiona, ya que es una carpeta generada.
+- La configuración pública se genera en tiempo de ejecución.
+- El proyecto mantiene una estructura de código legible dentro de `src/assets/js`.
+
+## Archivos Ignorados
 
 ```text
 node_modules/
@@ -163,10 +191,8 @@ dist/
 public/app-config.json
 ```
 
-Si despues de compilar aparece `dist/`, es normal. Git lo ignora.
-
 ## Autor
 
-Joan Cabrerizo Benedicto
+**Joan Cabrerizo Benedicto**
 
-GitHub: https://github.com/mrgpx22
+GitHub: [mrgpx22](https://github.com/mrgpx22)
