@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: blob: https:; font-src 'self' data: https://fonts.gstatic.com; connect-src 'self' ws: wss: https://*.supabase.co wss://*.supabase.co https://*.supabase.in wss://*.supabase.in; media-src 'self' blob: https:; frame-src 'self' https://www.youtube-nocookie.com https://www.youtube.com; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+<title>Web ERP</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <style>
+    html,
+    body,
+    button,
+    input,
+    textarea,
+    select,
+    a,
+    p,
+    span,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Montserrat", sans-serif !important;
+      color: rgb(0, 69, 107);
+    }
+  </style>
+  <script type="module" crossorigin src="/assets/index-R5nnQbGK.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/config-DCnDSnxt.js">
+  <link rel="stylesheet" crossorigin href="/assets/index-Cgu_-Ad6.css">
+</head>
+<body>
+  <div id="project-counter" class="project-counter" aria-live="polite">0</div>
+  <div class="logo" aria-label="A2dinnova"></div>
+  <canvas id="hero-canvas" aria-hidden="true"></canvas>
+
+  <main class="page">
+    <header class="hero">
+      <p class="eyebrow">A2dinnova</p>
+      <h1>Portal de acceso al ERP</h1>
+      <p class="subhead">Selecciona el módulo al que quieres entrar desde un único panel.</p>
+    </header>
+
+    <section class="parent" aria-label="Índice de módulos">
+      <article class="panel div1 tone-gray">
+        <p class="panel-kicker">Analítica</p>
+        <h2 class="panel-title">Inteligencia de Negocio</h2>
+        <p class="panel-text">Consulta indicadores y paneles para la toma de decisiones.</p>
+        <div class="module-stack">
+          <button type="button" class="module-card bg-bi" data-route="/Inteligencia%20de%20Negocio/inteligencia-negocio.html">
+            <span class="module-card-title">Inteligencia de Negocio</span>
+            <span class="module-card-desc">Dashboards y analítica para decisiones de negocio.</span>
+          </button>
+        </div>
+      </article>
+
+      <article class="panel div2 tone-sky">
+        <p class="panel-kicker">Área comercial</p>
+        <h2 class="panel-title">Comercial Marketing</h2>
+        <p class="panel-text">Campañas y seguimiento competitivo dentro del mismo bloque.</p>
+        <div class="module-stack">
+          <button type="button" class="module-card bg-marketing-campanas" data-route="/Comercial%20Marketing/Campa%C3%B1as%20de%20Marketing/marketing.html">
+            <span class="module-card-title">Campañas de Marketing</span>
+            <span class="module-card-desc">Planificación y ejecución de acciones comerciales.</span>
+          </button>
+          <button type="button" class="module-card bg-marketing-competencia" data-route="/Comercial%20Marketing/Analisis%20Competencia/analisis-competencia.html">
+            <span class="module-card-title">Análisis de Competencia</span>
+            <span class="module-card-desc">Benchmarking y seguimiento de competencia.</span>
+          </button>
+        </div>
+      </article>
+
+      <article class="panel div3 tone-sky">
+        <p class="panel-kicker">Relación cliente</p>
+        <h2 class="panel-title">Clientes y Ventas (CRM)</h2>
+        <p class="panel-text">Gestión de clientes, ventas y oportunidades en tiempo real.</p>
+        <div class="module-stack">
+          <button type="button" class="module-card bg-crm" data-route="/Clientes%20y%20Ventas%20%28CRM%29/Clientes/clientes.html">
+            <span class="module-card-title">Clientes y Ventas (CRM)</span>
+            <span class="module-card-desc">Pipeline comercial, cuentas y oportunidades.</span>
+          </button>
+        </div>
+      </article>
+
+      <article class="panel div4 tone-orange">
+        <p class="panel-kicker">Producto</p>
+        <h2 class="panel-title">Producto</h2>
+        <p class="panel-text">Gestión de innovación y roadmap del área de producto.</p>
+        <div class="module-stack">
+          <button type="button" class="module-card bg-id" data-route="/Productos/I+d/id.html">
+            <span class="module-card-title">I+D</span>
+            <span class="module-card-desc">Innovación y desarrollo de nuevos productos.</span>
+          </button>
+        </div>
+
+        <article class="panel tone-green product-logistica">
+          <p class="panel-kicker">Producción</p>
+          <h2 class="panel-title">Producción Logística</h2>
+          <p class="panel-text">Acceso a la vista general y a los submódulos de producción.</p>
+          <div class="module-stack">
+            <button type="button" class="module-card bg-logistica" data-route="/Productos/Produccion%20Logistica/Documentacion/documentacion.html">
+              <span class="module-card-title">Documentación</span>
+              <span class="module-card-desc">Guías, fichas y soporte documental.</span>
+            </button>
+            <button type="button" class="module-card bg-logistica" data-route="/Productos/Produccion%20Logistica/Produccion/produccion.html">
+              <span class="module-card-title">Producción</span>
+              <span class="module-card-desc">Seguimiento de órdenes y estado de fabricación.</span>
+            </button>
+          </div>
+        </article>
+      </article>
+
+      <article class="panel div5 tone-red">
+        <p class="panel-kicker">Operaciones</p>
+        <h2 class="panel-title">ERP</h2>
+        <p class="panel-text">Control completo de finanzas, recursos humanos y proveedores.</p>
+        <div class="module-stack">
+          <button type="button" class="module-card bg-finanzas" data-route="/ERP/Finanzas/ventas.html">
+            <span class="module-card-title">Finanzas</span>
+            <span class="module-card-desc">Facturación, control económico y tesorería.</span>
+          </button>
+          <button type="button" class="module-card bg-rrhh" data-route="/ERP/rrhh/rrhh.html">
+            <span class="module-card-title">RRHH</span>
+            <span class="module-card-desc">Gestión de personas y equipos.</span>
+          </button>
+          <button type="button" class="module-card bg-proveedores" data-route="/ERP/Proveedores/proveedores.html">
+            <span class="module-card-title">Proveedores</span>
+            <span class="module-card-desc">Compras, partners y seguimiento de suministro.</span>
+          </button>
+        </div>
+      </article>
+    </section>
+  </main>
+
+</body>
+</html>
