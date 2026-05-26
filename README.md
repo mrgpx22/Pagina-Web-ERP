@@ -174,6 +174,12 @@ Documentacion
 Produccion
 ```
 
+## Screenshots
+
+![Pantalla principal](./public/assets/screenshots/Inicio.png)
+![Carousel](./public/assets/screenshots/carousel.png)
+![Modal](./public/assets/screenshots/modal.png)
+
 ## Seguridad Y Buenas Prácticas
 
 - Las variables sensibles se mantienen fuera del repositorio.
