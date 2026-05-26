@@ -176,8 +176,13 @@ Produccion
 
 ## Screenshots
 
+# Pantalla Principal
 ![Pantalla principal](/src/assets/screenshots/Inicio.png)
+
+# Carousel con 6 cards
 ![Carousel](/src/assets/screenshots/carousel.png)
+
+# Modal de 1 card
 ![Modal](/src/assets/screenshots/modal.png)
 
 ## Seguridad Y Buenas Prácticas
