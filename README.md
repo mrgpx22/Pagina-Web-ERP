@@ -176,9 +176,9 @@ Produccion
 
 ## Screenshots
 
-![Pantalla principal](/public/assets/screenshots/Inicio.png)
-![Carousel](/public/assets/screenshots/carousel.png)
-![Modal](/public/assets/screenshots/modal.png)
+![Pantalla principal](/src/assets/screenshots/Inicio.png)
+![Carousel](/src/assets/screenshots/carousel.png)
+![Modal](/src/assets/screenshots/modal.png)
 
 ## Seguridad Y Buenas Prácticas
 
